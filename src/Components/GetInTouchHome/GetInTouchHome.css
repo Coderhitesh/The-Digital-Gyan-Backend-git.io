@@ -1,0 +1,10 @@
+.getintouch-section{
+    width: 100%;
+    background-color: #91b8f1;
+}
+
+.getintouch-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}

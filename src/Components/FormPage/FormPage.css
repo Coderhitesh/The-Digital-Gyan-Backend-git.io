@@ -1,0 +1,55 @@
+.FormPage-section{
+    width: 100%;
+    background-color: rgb(192, 233, 235);
+    border-radius: 10px;
+    padding: 10px 0px;
+}
+
+.FormPage-section .heading{
+    text-align: center;
+}
+
+/* .FormPage-section .heading span{
+    color: white !important ;
+} */
+
+.FormPage-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.FormPage-section form .same-field{
+    width: 100%;
+    height: 40px;
+}
+
+.FormPage-section form .same-field input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.FormPage-section form .mssg{
+    width: 100%;
+    height: 70px;
+}
+
+.FormPage-section form .mssg textarea{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.FormPage-section form .form-btn{
+    padding: 10px 15px;
+    background-color: cadetblue;
+    color: white;
+    font-weight: 600;
+}

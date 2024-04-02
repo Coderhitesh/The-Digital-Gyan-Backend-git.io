@@ -1,0 +1,92 @@
+.blogpage-section{
+container: 100%;
+}
+
+.blogpage-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blogpage-section .container .bg{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #22273E;
+}
+
+.blogpage-section .container .bg h2{
+    font-size: 44px;
+    font-weight: 900;
+    color: white;
+}
+
+.blogpage-section .container .main-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+}
+
+.blogpage-section .container .main-container .col{
+    width: 31%;
+    background-color: rgb(245, 245, 245);
+}
+
+.blogpage-section .container .main-container .col .content{
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.blogpage-section .container .main-container .col .content .titlename{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.blogpage-section .container .main-container .col .content .date-name{
+    display: flex;
+    gap: 7px;
+}
+
+.blogpage-section .container .main-container .col .content .date-name .date{
+    font-size: 13px;
+    color: rgb(98, 98, 98);
+    border-right: 1px dotted black;
+    padding-right: 5px;
+}
+
+.blogpage-section .container .main-container .col .content .date-name .writer{
+    font-size: 13px;
+    color: rgb(98, 98, 98);
+}
+
+@media (max-width:860px) {
+
+    .blogpage-section .container .main-container{
+        
+        flex-wrap: wrap;
+    }
+    
+    .blogpage-section .container .main-container .col{
+        width: 48%;
+    }
+    
+}
+
+@media (max-width:630px) {
+
+    .blogpage-section .container .main-container{
+        padding: 40px 20px;
+    }
+    
+    .blogpage-section .container .main-container .col{
+        width: 100%;
+    }
+    
+}

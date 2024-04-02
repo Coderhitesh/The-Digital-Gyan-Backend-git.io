@@ -1,0 +1,46 @@
+.searchPage-section{
+    width: 100%;
+}
+
+.searchPage-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px !important;
+    padding: 0px !important;
+}
+
+.searchPage-section .container .heading{
+    text-align: start !important;
+}
+
+.searchPage-section .container .heading span{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1f5886;
+}
+
+.searchPage-section .container .search-box{
+    width: 100%;
+    height: 40px;
+}
+
+.searchPage-section .container .search-box input{
+    width: 80%;
+    height: 100%;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #97BDBE;
+}
+
+.searchPage-section .container .search-box button{
+    width: 20%;
+    height: 100%;
+    background-color: #97BDBE;
+    border: none;
+    color: white;
+}
+/* 
+.searchPage-section .container .search-box button i{
+    font-size: 18px;
+} */

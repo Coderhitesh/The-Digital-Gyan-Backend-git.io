@@ -1,0 +1,51 @@
+.sem-section{
+    width: 100%;
+}
+
+.sem-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sem-section .container .heading{
+    width: 100%;
+}
+
+.sem-section .container .heading span{
+    font-size: 25px;
+    font-weight: 600;
+    color: cadetblue;
+}
+
+.sem-section .container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sem-section .container .main-container .img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.sem-section .container .main-container .img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.505);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sem-section .container .main-container .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

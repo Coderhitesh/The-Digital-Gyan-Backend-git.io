@@ -1,0 +1,137 @@
+.seo-section{
+    width: 100%;
+}
+
+.seo-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 60px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.seo-section .container .heading{
+    width: 100%;
+}
+
+.seo-section .container .heading span{
+    font-size: 25px;
+    font-weight: 600;
+    color: #1F5886;
+}
+
+.seo-section .container .main-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.seo-section .container .main-container .up{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seo-section .container .main-container .up .left{
+    width: 45%;
+}
+
+.seo-section .container .main-container .up .left .img{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.seo-section .container .main-container .up .left .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.seo-section .container .main-container .up .left .img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.496);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.seo-section .container .main-container .up .right{
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.seo-section .container .main-container .up .right p{
+    font-size: 16px;
+    color: rgb(103, 103, 103);
+}
+
+.seo-section .container .main-container .down{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seo-section .container .main-container .down span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.seo-section .container .main-container .down .same-box p{
+    font-size: 16px;
+    color: rgb(103, 103, 103);
+}
+
+@media (max-width:990px) {
+
+    .seo-section .container .main-container .up{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .seo-section .container .main-container .up .left{
+        width: 100%;
+    }
+
+    .seo-section .container .main-container .up .right{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:554px) {
+
+    .seo-section .container{
+        padding: 30px 20px;
+    }
+
+    .seo-section .container .main-container .up .left .img{
+        height: 270px;
+    }
+
+    .seo-section .container .heading{
+        text-align: center;
+    }
+
+    .seo-section .container .heading span{
+        font-size: 20px;
+    }
+
+    .seo-section .container .main-container .down span{
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .seo-section .container .main-container .down .same-box h4{
+        font-size: 16px;
+    }
+    
+}

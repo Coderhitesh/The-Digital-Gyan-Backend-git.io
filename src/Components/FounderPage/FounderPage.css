@@ -1,0 +1,116 @@
+.founderPage-section{
+    width: 100%;
+}
+
+.founderPage-section .container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.founderPage-section .container .heading{
+    width: 100%;
+    text-align: center;
+}
+
+.founderPage-section .container .heading span{
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1f5886;
+}
+
+.founderPage-section .container .detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.founderPage-section .container .detail .left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.founderPage-section .container .detail .left .img{
+    width: 100%;
+    /* height: 380px; */
+    height: 440px;
+}
+
+.founderPage-section .container .detail .left .img img:nth-child(1){
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.founderPage-section .container .detail .left .main-content{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;text-align: start;
+    gap: 15px;
+}
+
+.founderPage-section .container .detail .left .main-content p{
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+}
+
+.founderPage-section .container .detail .left .main-content .contact-link{
+    color: black;
+    font-weight: 700;
+}
+
+.founderPage-section .container .detail .left .main-content .contact-link a{
+    font-weight: 500;
+    color: blue;
+}
+
+.founderPage-section .container .detail .right{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width:840px) {
+
+    .founderPage-section .container .detail{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .founderPage-section .container .detail .left{
+        width: 100%;
+    }
+
+    .founderPage-section .container .detail .right{
+        width: 60%;
+    }
+    
+}
+
+@media (max-width:600px) {
+
+    .founderPage-section .container .detail .right{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:500px) {
+
+    .founderPage-section .container{
+        padding: 40px 20px;
+    }
+
+    .founderPage-section .container .detail .left .img{
+        width: 100%;
+        height: 250px;
+    }
+    
+}

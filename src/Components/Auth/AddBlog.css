@@ -1,0 +1,94 @@
+.blog-section{
+    width: 100%;
+}
+
+.blog-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.blog-section form .same-blog-field{
+    width: 100%;
+    height: 40px;
+}
+
+.blog-section form .same-blog-field input{
+    padding-left: 8px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(160, 160, 160);
+}
+
+.blog-section form .name-date{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.blog-section form .name-date .name{
+    width: 48%;
+    height: 40px;
+}
+
+.blog-section form .name-date .name input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(160, 160, 160);
+    padding-left: 8px;
+    outline: none;
+}
+
+.blog-section form .name-date .date{
+    width: 48%;
+    height: 40px;
+}
+
+.blog-section form .name-date .date input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(160, 160, 160);
+    padding-left: 8px;
+    outline: none;
+}
+
+.blog-section form .para{
+    width: 100%;
+    height: 150px;
+}
+
+.blog-section form .para textarea{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(160, 160, 160);
+    padding-left: 7px;
+    padding-top: 5px;
+    outline: none;
+}
+
+.blog-section form .addbtn{
+    background-color: #2BFF2F;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+@media (max-width:800px) {
+
+    .blog-section form .name-date{
+        flex-direction: column;
+        gap: 14px;
+    }
+    
+    .blog-section form .name-date .name{
+        width: 100%;
+    }
+    
+    .blog-section form .name-date .date{
+        width: 100%;
+    }
+    
+}
