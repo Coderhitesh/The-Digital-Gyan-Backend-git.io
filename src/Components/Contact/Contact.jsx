@@ -30,7 +30,7 @@ const handlechange = (e) =>{
 const formdatafetch = async(e) =>{
     e.preventDefault()
     try {
-        const response = await axios.post('https://the-digital-gyan-git-io.onrender.com/api/v16/createcontact',formdata);
+        const response = await axios.post('https://www.api.thedigitalgyan.in/api/v16/createcontact',formdata);
         toast.success('Message Sent Successfully!')
         console.log(response)
     } catch (error) {

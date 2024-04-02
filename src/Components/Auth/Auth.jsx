@@ -65,7 +65,7 @@ function Auth() {
     const addProductapi = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://the-digital-gyan-git-io.onrender.com/api/v16/createProduct', addProductData);
+            const response = await axios.post('https://www.api.thedigitalgyan.in/api/v16/createProduct', addProductData);
             console.log('add product api called', response);
             toast.success("Product added successfully");
         } catch (error) {
@@ -80,7 +80,7 @@ function Auth() {
 
     const handleDelete = async (id) => {
         try {
-         const res= await axios.delete(`https://the-digital-gyan-git-io.onrender.com/api/v16/deleteProduct/${id}`);
+         const res= await axios.delete(`https://www.api.thedigitalgyan.in/api/v16/deleteProduct/${id}`);
             // console.log(res)
             toast.success("Product deleted successfully");
             const updatedProducts = allServices.filter(product => product.id !== id);
@@ -99,7 +99,7 @@ function Auth() {
     useEffect(() => {
         const datafetch = async () => {
             try {
-                const response = await axios.get('https://the-digital-gyan-git-io.onrender.com/api/v16/getAllProduct')
+                const response = await axios.get('https://www.api.thedigitalgyan.in/api/v16/getAllProduct')
                 // console.log(response.data.data)
                 setAllServices(response.data.data)
             } catch (error) {
@@ -116,7 +116,7 @@ function Auth() {
     useEffect(() => {
         const fetchEmail = async () => {
             try {
-                const response = await axios.get('https://the-digital-gyan-git-io.onrender.com/api/v16/getcontact')
+                const response = await axios.get('https://www.api.thedigitalgyan.in/api/v16/getcontact')
                 setEmailData(response.data)
                 // console.log(response.data)
             } catch (error) {
@@ -130,7 +130,7 @@ function Auth() {
 
     const handleMailDelete = async (id) => {
         try {
-            const res = await axios.delete(`https://the-digital-gyan-git-io.onrender.com/api/v16/delete-mail/${id}`);
+            const res = await axios.delete(`https://www.api.thedigitalgyan.in/api/v16/delete-mail/${id}`);
             console.log(res)
             toast.success("Email deleted successfully");
             // Update the product list after deletion

@@ -16,7 +16,7 @@ function BlogPage() {
     useEffect(()=>{
         const fetchingdata = async()=>{
             try {
-                const response = await axios.get('https://the-digital-gyan-git-io.onrender.com/api/v16/allBlog')
+                const response = await axios.get('https://www.api.thedigitalgyan.in/api/v16/allBlog')
                 // console.log(response.data.data)
                 setData(response.data.data);
             } catch (error) {

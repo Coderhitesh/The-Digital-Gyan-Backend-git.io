@@ -24,7 +24,7 @@ function AddBlog() {
     const addblogapi = async(e)=>{
         e.preventDefault();
         try {
-            const response = await axios.post('https://the-digital-gyan-git-io.onrender.com/api/v16/createBlogs',blogData)
+            const response = await axios.post('https://www.api.thedigitalgyan.in/api/v16/createBlogs',blogData)
             console.log('Blog posted Successfully',response)
             toast.success("Blog posted Successfully");
         } catch (error) {

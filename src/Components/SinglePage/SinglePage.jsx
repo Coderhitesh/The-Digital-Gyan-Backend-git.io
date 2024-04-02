@@ -14,7 +14,7 @@ function SinglePage() {
     useEffect(() => {
         const datafetch = async () => {
             try {
-                const response = await axios.get(`https://the-digital-gyan-git-io.onrender.com/api/v16/singleProduct/${id}`);
+                const response = await axios.get(`https://www.api.thedigitalgyan.in/api/v16/singleProduct/${id}`);
                 console.log(response.data.data);
                 setItem(response.data.data);
             } catch (error) {
